@@ -1,0 +1,169 @@
+#editProfile-container {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+#edit-background-image {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    object-fit: cover;
+}
+
+#edit-background-color {
+    background-color: #8c30f5;
+    opacity: 0.6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+#profile-setting-h {
+    font-size: 55px;
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;
+}
+
+#editProfile-form {
+    margin-top: 15px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    justify-content: space-around;
+}
+
+.profile-setting-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.profile-setting-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.profile-setting-input label {
+    width: 100%;
+    text-align: left;
+    margin: 10px 0px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.profile-setting-input input {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 7px 5px;
+    font-size: 16px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    outline: none;
+    opacity: 0.7;
+    font-weight: 700;
+}
+
+#profile-description {
+    opacity: 0.7;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    width: 90%;
+    max-width: 90%;
+    height: 35%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.profile-setting-botons {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-setting-botons input {
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    outline: none;
+    border: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.profile-setting-botons input:first-child {
+    background-color: #8c30f5;
+    border: #8c30f5;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #editProfile-form {
+        width: 90%;
+    }
+    #profile-description {
+        border-radius: 5px;
+        height: 25%;
+        font-size: 12px;
+    }
+    .profile-setting-input input {
+        font-size: 12px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profile-setting-input input {
+        font-size: 13px;
+        border-radius: 5px;
+    }
+    .profile-setting-input label {
+        font-size: 18px;
+    }
+    #profile-setting-h {
+        font-size: 50px;
+    }
+    #profile-description {
+        font-size: 13px;
+    }
+    .profile-setting-botons input {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #profile-setting-h {
+        font-size: 35px;
+    }
+    .profile-setting-input input {
+        font-size: 11px;
+    }
+    .profile-setting-input label {
+        font-size: 16px;
+    }
+    #profile-description {
+        font-size: 11px;
+        height: 20%;
+    }
+    .profile-setting-botons input {
+        padding: 8px 15px;
+    }
+}

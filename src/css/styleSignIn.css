@@ -1,0 +1,258 @@
+#signInContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#signIn-content {
+    width: 90%;
+    height: 80vh;
+    justify-content: center;
+    display: flex;
+}
+
+#left-part {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    background-color: #8c30f5;
+    justify-content: center;
+    height: 80vh;
+    border-radius: 50px 0px 0px 50px;
+}
+
+#content-frase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+
+#frase-container {
+    background-color: white;
+    width: 90%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 20% 60% 10%;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#content-frase-quote {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-flow: row-reverse;
+}
+
+#content-frase-quote img {
+    object-fit: contain;
+    width: 30px;
+}
+
+#content-frase-person {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#content-frase-name {
+    height: 50%;
+    font-size: 20px;
+}
+
+#content-frase-charge {
+    height: 50%;
+    font-size: 15px;
+}
+
+#content-frase-opinion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+#arrow-navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+#arrow-navigation img {
+    cursor: pointer;
+    object-fit: contain;
+    width: 25px;
+    transition: 0.3s all ease-in-out;
+}
+
+#arrow-navigation img:hover {
+    transform: scale(1.03);
+}
+
+
+/*bgcece e w ew
+ ewvwv wv wr
+  vt
+  wb w 
+  rwb
+  rwb 
+  w
+  b w
+  b 
+  rwb*/
+
+#right-part {
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    width: 40%;
+    border-radius: 0px 50px 50px 0px;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow-x: hidden;
+    z-index: 2;
+}
+
+#signIn-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    justify-content: center;
+    text-align: center;
+}
+
+#signIn-form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#signIn-form h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.signIn-input {
+    padding-bottom: 10px;
+    font-size: 15px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-bottom: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #8c30f5;
+}
+
+.signIn-submit {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 300px;
+    background-color: #8c30f5;
+    outline: none;
+    border: none;
+    padding: 15px 0px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: black 2px 2px 5px;
+}
+
+#signIn-figures {
+    display: flex;
+    width: 80%;
+    overflow-x: hidden;
+    position: absolute;
+    height: 80vh;
+    flex-direction: row;
+}
+
+#left-figures {
+    display: inline-flex;
+    height: 80vh;
+    width: 50%;
+    overflow-x: hidden;
+}
+
+#right-figures {
+    display: inline-flex;
+    width: 50%;
+    height: 80vh;
+    z-index: 3;
+}
+
+#signIn-error {
+    width: 17%;
+    position: absolute;
+    background-color: #d9534f;
+    padding: 10px 0px;
+    transform: translate(0%, -110%);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    #left-part {
+        display: none;
+    }
+    #right-part {
+        width: 100%;
+        border-radius: 10px;
+    }
+    #signIn-form {
+        width: 65%;
+        height: 60%;
+        justify-content: center;
+    }
+    #signIn-form h1 {
+        font-size: 85px;
+    }
+    .signIn-input {
+        font-size: 18px;
+    }
+    .signIn-submit {
+        padding: 20px 0px;
+        font-size: 25px;
+    }
+    #left-figures,
+    #right-figures {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .signIn-submit {
+        border-radius: 10px;
+        padding: 10px 0px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #signIn-form h1 {
+        font-size: 70px;
+    }
+}

@@ -1,0 +1,93 @@
+#navBar-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+}
+
+#navBar-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+#navBar-image img {
+    width: 150px;
+    height: 72px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#navBar-options {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+#navBar-profileName {
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+#navBar-botons {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar-button {
+    width: 40%;
+    cursor: pointer;
+    font-size: 15px;
+    align-items: center;
+    padding: 10px 0px;
+    background: #8c30f5;
+    border: 1px solid #8c30f5;
+    font-weight: 600;
+    border-radius: 6px;
+    color: white;
+}
+
+.white {
+    background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #navBar-options {
+        display: none;
+    }
+    #navBar-image {
+        width: 60%;
+    }
+    #navBar-image img {
+        object-fit: contain;
+    }
+    #navBar-botons {
+        width: 40%;
+    }
+    .navBar-button {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #navBar-image img {
+        width: 120px;
+        height: 60px;
+        object-fit: contain;
+    }
+    .navBar-button {
+        font-size: 11px;
+    }
+}

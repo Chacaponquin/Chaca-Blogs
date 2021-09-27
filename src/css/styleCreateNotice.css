@@ -1,0 +1,361 @@
+#createContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#create-background {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+}
+
+#create-color {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #8c30f5;
+    opacity: 0.5;
+    z-index: -79;
+}
+
+#create-background-image {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -80;
+}
+
+#create-cards-container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#create-cards {
+    display: flex;
+    width: 200%;
+    height: 100%;
+}
+
+.create-card {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 1.5s ease-in-out;
+}
+
+.create-card h1 {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+#createPost-form {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#post-title {
+    padding: 7px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    outline: none;
+    height: 10%;
+}
+
+#post-resume {
+    padding: 7px;
+    font-size: 15px;
+    width: 100%;
+    height: 25%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 25%;
+    max-height: 25%;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    outline: none;
+}
+
+#post-resume::placeholder {
+    font-size: 17px;
+}
+
+#post-selects {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.post-select-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.post-select-container label {
+    font-weight: bold;
+}
+
+.post-select {
+    width: 60%;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#post-new {
+    display: flex;
+    width: 100%;
+}
+
+.new-category-playlist {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.new-category-playlist-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    transform: translateY(-110%);
+    background-color: #8c30f5;
+}
+
+.new-playlist-name {
+    background-color: #8c30f5;
+    color: white;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+#new-category-description {
+    background-color: #8c30f5;
+    color: white;
+    padding: 6px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+
+.hide {
+    display: none;
+}
+
+.new-button {
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.new-button:hover {
+    color: white;
+    background-color: #8c30f5;
+}
+
+.post-passNext {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    flex-flow: row-reverse;
+}
+
+.post-passNext input {
+    border-radius: 5px;
+    background-color: #8c30f5;
+    border: 1px solid white;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: white;
+}
+
+#post-content {
+    max-width: 90%;
+    min-width: 90%;
+    max-height: 70%;
+    min-height: 70%;
+    width: 90%;
+    height: 70%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+.post-passBack {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.post-passBack input {
+    border-radius: 5px;
+    background-color: #8c30f5;
+    border: 1px solid white;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .create-card h1 {
+        font-size: 45px;
+    }
+    #post-title,
+    #post-resume {
+        font-size: 17px;
+        padding: 5px;
+    }
+    #post-resume::placeholder {
+        font-size: 17px;
+    }
+    #post-selects {
+        flex-direction: column;
+    }
+    .post-select-container {
+        width: 100%;
+    }
+    .post-select-container label {
+        font-size: 14px;
+    }
+    .post-select {
+        width: 68%;
+        font-size: 14px;
+    }
+    .new-button,
+    .post-passBack input {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .post-passNext input {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    #post-content {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #create-cards-container {
+        width: 90%;
+    }
+    .create-card h1 {
+        font-size: 40px;
+    }
+    #post-title,
+    #post-resume {
+        font-size: 15px;
+        padding: 5px;
+    }
+    #post-resume::placeholder {
+        font-size: 15px;
+    }
+    #post-selects {
+        flex-direction: column;
+    }
+    .post-select-container {
+        width: 100%;
+    }
+    .post-select-container label {
+        font-size: 12px;
+    }
+    .post-select {
+        width: 68%;
+        font-size: 12px;
+    }
+    .new-button,
+    .post-passBack input {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    .post-passNext input {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    #post-content {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .create-card h1 {
+        font-size: 35px;
+    }
+    #post-title,
+    #post-resume {
+        font-size: 15px;
+        padding: 5px;
+    }
+    #post-resume::placeholder {
+        font-size: 15px;
+    }
+    #post-selects {
+        flex-direction: column;
+    }
+    .post-select-container {
+        width: 100%;
+    }
+    .post-select-container label {
+        font-size: 12px;
+    }
+    .post-select {
+        width: 65%;
+        font-size: 12px;
+    }
+    .new-button,
+    .post-passBack input {
+        padding: 7px 10px;
+        font-size: 11px;
+    }
+    .post-passNext input {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    #post-content {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,132 @@
+#categoriesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#categories-card-container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category-card {
+    width: 27.5%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 5px gray;
+    border-radius: 10px;
+    transition: all 0.4s;
+    margin: 20px 0px;
+    background-color: white;
+}
+
+.category-card:hover {
+    transform: scale(1.1);
+}
+
+.category-card-img {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-card-img img {
+    width: 60%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.category-card-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.category-card-container h3 {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 15px;
+}
+
+.category-card-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12.5px;
+    width: 80%;
+    height: 50%;
+}
+
+.category-card-container input {
+    text-align: center;
+    width: 90%;
+    height: 20%;
+    font-weight: 600;
+    background-color: #8c30f5;
+    border: 1px solid #8c30f5;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    #categories-card-container {
+        width: 90%;
+    }
+    .category-card {
+        width: 45%;
+        height: 40vh;
+    }
+    .category-card-container h3 {
+        font-size: 22px;
+    }
+    .category-card-container p {
+        font-size: 14.5px;
+    }
+    .category-card-container input {
+        border-radius: 5px;
+        width: 80%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #categories-card-container {
+        width: 90%;
+    }
+    .category-card {
+        width: 45%;
+        height: 300px;
+    }
+    .category-card-container h3 {
+        font-size: 15px;
+    }
+    .category-card-container p {
+        font-size: 9px;
+    }
+    .category-card-container input {
+        border-radius: 5px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .category-card-container p {
+        font-size: 8px;
+    }
+}

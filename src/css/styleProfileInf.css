@@ -1,0 +1,459 @@
+#seeMyProfile-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profileInf-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+
+#profileBasicInf {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 30vh;
+}
+
+#profile-peopleInf {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    justify-content: center;
+}
+
+.profile-peopleInf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+#profile-pictureInf {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-pictureInf img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#profile-editInf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+
+#profile-editInf input {
+    font-weight: 600;
+    width: 80%;
+    padding: 15px;
+    background-color: #8c30f5;
+    border: #8c30f5 1px solid;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#profileEdit-options {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.profileEdit-options {
+    width: 50%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+
+.profileEdit-options:hover {
+    background-color: #8c30f5;
+    color: white;
+}
+
+.optionSelect {
+    background-color: #8c30f5;
+    color: white;
+}
+
+.noPost-h1 {
+    font-size: 45px;
+    opacity: 0.5;
+}
+
+#profileEdit-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postsEdit-card {
+    margin-bottom: 30px;
+    width: 80%;
+    height: 14vh;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px gray;
+    display: flex;
+    flex-direction: row;
+}
+
+.postEdit-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.postEdit-picture-image {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.postEdit-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.postEdit-title h2 {
+    opacity: 0.5;
+}
+
+.postEdit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.postEdit-button input {
+    font-weight: 600;
+    width: 70%;
+    padding: 15px;
+    background-color: #8c30f5;
+    border: #8c30f5 1px solid;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#profilePlaylists-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profilePlaylist-card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playlistEdit-card {
+    margin-bottom: 30px;
+    width: 80%;
+    height: 14vh;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px gray;
+    display: flex;
+    flex-direction: row;
+}
+
+.playlistEdit-picture {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 22.5%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlistEdit-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.playlistEdit-name h2 {
+    opacity: 0.5;
+}
+
+.playlistEdit-sectionOpen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5%;
+    height: 100%;
+}
+
+.playlistEdit-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+.playlistEdit-picture img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.playlistEdit-sectionOpen img {
+    cursor: pointer;
+    width: 50%;
+    height: 40%;
+    object-fit: contain;
+    transition: 0.5s ease-in-out all;
+}
+
+.sectionOpen {
+    transform: rotate(180deg);
+}
+
+.playlistEdit-buttons input {
+    font-weight: 700;
+    width: 70%;
+    padding: 7px;
+    background-color: #8c30f5;
+    border: #8c30f5 1px solid;
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.playlistEdit-post-card {
+    margin-bottom: 10px;
+    width: 60%;
+    height: 13vh;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px gray;
+    display: flex;
+    flex-direction: row;
+}
+
+.playlistEdit-post-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.playlistEdit-post-image {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.playlistEdit-post-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.playlistEdit-post-title h2 {
+    font-size: 17px;
+    opacity: 0.5;
+}
+
+.playlistEdit-post-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+.playlistEdit-post-button input {
+    font-weight: 600;
+    width: 70%;
+    padding: 5px;
+    background-color: #8c30f5;
+    border: #8c30f5 1px solid;
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    #profileInf-container {
+        width: 100%;
+    }
+    #profileBasicInf {
+        width: 75%;
+    }
+    .profileEdit-options {
+        height: 12vh;
+    }
+    .postsEdit-card,
+    .playlistEdit-card {
+        width: 90%;
+        height: 10vh;
+    }
+    .playlistEdit-post-card {
+        width: 75%;
+        height: 9vh;
+    }
+    .noPost-h1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #profile-peopleInf {
+        font-size: 12px;
+    }
+    #profile-editInf input {
+        padding: 10px;
+        font-size: 15px;
+    }
+    #profileEdit-options {
+        margin-bottom: 15px;
+    }
+    .profileEdit-options {
+        font-size: 13px;
+    }
+    .postsEdit-card,
+    .playlistEdit-card {
+        margin-bottom: 10px;
+    }
+    .postEdit-title h2,
+    .playlistEdit-name h2 {
+        font-size: 16px;
+    }
+    .postEdit-button input {
+        padding: 10px;
+        font-size: 13px;
+        border-radius: 5px;
+    }
+    .playlistEdit-buttons input {
+        font-weight: 600;
+        padding: 5px;
+        font-size: 10px;
+        border-radius: 5px;
+        width: 80%;
+    }
+    .playlistEdit-post-title h2 {
+        font-size: 13px;
+    }
+    .playlistEdit-post-button input {
+        width: 90%;
+        font-size: 9px;
+        border-radius: 5px;
+    }
+    .noPost-h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profileEdit-options {
+        font-size: 11px;
+    }
+    .postEdit-button input {
+        padding: 7px;
+        font-size: 10px;
+    }
+    .playlistEdit-buttons input {
+        padding: 3px;
+        font-size: 9px;
+    }
+    .playlistEdit-post-button input {
+        padding: 3px;
+        font-size: 8px;
+    }
+    .postEdit-title h2,
+    .playlistEdit-name h2 {
+        font-size: 14px;
+    }
+    .playlistEdit-post-title h2 {
+        font-size: 11px;
+    }
+    .noPost-h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .profileEdit-options {
+        height: 11vh;
+    }
+    #profile-peopleInf {
+        font-size: 10px;
+    }
+    #profile-editInf input {
+        padding: 7px;
+        font-size: 11px;
+    }
+    .profileEdit-options {
+        font-size: 10px;
+    }
+    .postEdit-title h2,
+    .playlistEdit-name h2 {
+        font-size: 12px;
+    }
+    .postsEdit-card,
+    .playlistEdit-card {
+        width: 90%;
+        height: 9vh;
+    }
+    .playlistEdit-post-card {
+        width: 80%;
+        height: 8vh;
+    }
+    .playlistEdit-post-button input {
+        padding: 3px;
+        font-size: 7px;
+    }
+    .noPost-h1 {
+        font-size: 20px;
+    }
+}
